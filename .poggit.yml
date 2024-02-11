@@ -5,4 +5,5 @@ branches:
 projects:
   CustomFurnaceRecipes:
     path: ""
+    icon: "./icon.png"
 ...
