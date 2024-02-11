@@ -1,0 +1,7 @@
+recipes:
+  0:
+    input: "minecraft:coal"
+    output: "minecraft:iron_ingot"
+  1:
+    input: "minecraft:iron_ingot"
+    output: "minecraft:coal"
