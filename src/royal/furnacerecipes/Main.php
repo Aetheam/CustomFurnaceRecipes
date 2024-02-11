@@ -16,7 +16,6 @@ class Main extends PluginBase implements Listener
     protected function onEnable(): void
     {
         $this->saveDefaultConfig();
-
         $recipes = $this->getConfig()->get("recipes");
         foreach ($recipes as $recipe){
             $input = StringToItemParser::getInstance()->parse($recipe["input"]);
@@ -24,6 +23,7 @@ class Main extends PluginBase implements Listener
             $this->registerFurnace($input, $output);
         }
     }
+    
     public function registerFurnace(Item $input, Item $output): void {
         $furnaceRecipe = new FurnaceRecipe(
             $output,
